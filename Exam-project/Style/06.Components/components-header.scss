@@ -1,0 +1,9 @@
+@import "../01.Setting/settings-colors";
+@import "../01.Setting/settings-shadow";
+
+header,
+.header {
+    display: flex;
+    background-color: $white;
+    box-shadow: $primary-shadow;
+}

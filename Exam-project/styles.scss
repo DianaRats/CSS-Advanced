@@ -1,0 +1,43 @@
+@import "./Style/01.Setting/settings-colors.scss";
+@import "./Style/01.Setting/settings-breakpoints.scss";
+@import "./Style/01.Setting/settings-shadow.scss";
+@import "./Style/01.Setting/settings-animation.scss";
+@import "./Style/01.Setting/settings-placeholde.scss";
+
+@import "./Style/03.Generic/generic-normalize.scss";
+@import "./Style/03.Generic/generic-typography.scss";
+
+@import "./Style/04.Elements/elements-body.scss";
+
+@import "./Style/05.Objects/objects-wrapper.scss";
+
+@import "./Style/06.Components/components-header.scss";
+@import "./Style/06.Components/components-navigation.scss";
+@import "./Style/06.Components/components-button.scss";
+@import "./Style/06.Components/components-main.scss";
+@import "./Style/06.Components/components-first-step.scss";
+@import "./Style/06.Components/components-label.scss";
+@import "./Style/06.Components/components-information-container.scss";
+@import "./Style/06.Components/components-video-section.scss";
+@import "./Style/06.Components/components-program.scss";
+@import "./Style/06.Components/components-program-container.scss";
+@import "./Style/06.Components/components-select-section.scss";
+@import "./Style/06.Components/components-more-information-container.scss";
+@import "./Style/06.Components/components-teachers-title.scss";
+@import "./Style/06.Components/components-managers.scss";
+@import "./Style/06.Components/components-all-teachers-container.scss";
+@import "./Style/06.Components/components-current-teachet-container.scss";
+@import "./Style/06.Components/components-current-teacher.scss";
+@import "./Style/06.Components/components-hover-item.scss";
+@import "./Style/06.Components/components-candidate-form.scss";
+@import "./Style/06.Components/components-candidate-form-information.scss";
+@import "./Style/06.Components/components-map.scss";
+@import "./Style/06.Components/components-map-info.scss";
+@import "./Style/06.Components/components-contact-us-container.scss";
+@import "./Style/06.Components/components-destination-guide.scss";
+@import "./Style/06.Components/components-footer.scss";
+
+@import "./Style/07.Utilities/utilities-centered.scss";
+@import "./Style/07.Utilities/utilities-position.scss";
+@import "./Style/07.Utilities/utilities-bold-text.scss";
+@import "./Style/07.Utilities/utilities-grid.scss";

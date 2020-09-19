@@ -1,0 +1,33 @@
+@import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-animation.scss";
+
+.teachers-title {
+    display: grid;
+    background-color: $secondary--600;
+
+    &__container {
+        color: $white;
+        display: grid;
+        grid-template-rows: 128px auto;
+        justify-items: center;
+        text-align: center;
+
+        @include iphone8 {
+            grid-template-rows: 128px 224px;
+        }
+
+        h1 {
+            margin-top: 64px;
+            margin-bottom: 0;
+            opacity: 0;
+            animation: hiddenText ease-out 1.5s forwards;
+        }
+
+        p {
+            max-width: 850px;
+            margin: 0;
+            opacity: 0;
+            animation: hiddenText ease-out 2s forwards 1s;
+        }     
+    }
+}

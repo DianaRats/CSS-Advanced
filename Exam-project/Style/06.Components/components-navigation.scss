@@ -1,0 +1,115 @@
+@import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-animation.scss";
+@import "../01.Setting/settings-placeholde.scss";
+
+.navbar {
+    display: grid;
+    grid-template-columns: 200px auto 82px;
+
+    @include iphone8 {
+        grid-template-columns: 200px auto auto;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        &--horizontal {
+            width: 122px;
+            height: 42px;
+            margin: 16px 0;
+
+            @include iphone8 {
+                display: none;
+            }
+        }
+
+        &--vertical {
+            display: none;
+
+            @include iphone8 {
+                display: inline-block;
+                width: 43.5x;
+                height: 56px;
+                margin: 8px 0;
+            }
+        }
+
+        &__arrow {
+            margin-right: 16px;
+
+            @include iphone8 {
+                display: none;
+            }
+        }
+
+        &__arrow:hover {
+            transform: rotate(90deg);
+        }
+
+        &__arrow--mobile {
+            display: none;
+
+            @include iphone8 {
+                display: inline-block;
+                margin-right: 14px;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        list-style: none;
+
+        @include iphone8 {
+            display: none;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        margin: 15px 24px;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $grey--700;
+        }
+
+        .character {
+            font-weight: bold !important;
+            line-height: 16px !important;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: #ff9100;
+
+            .character {
+                animation: upLetter 0.6s ease-out infinite;
+                position: relative;
+                top: 0;
+                @extend %rotateCharacter;
+            }
+        }
+    }  
+
+    &__button {
+        display: flex;
+        align-items: center;
+    }
+
+    &__mobile-menu {
+        display: none;
+
+        @include iphone8 {
+            display: inline-block;
+            align-self: center;
+            position: relative;
+            right: -10px;
+        }
+    }
+}

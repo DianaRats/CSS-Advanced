@@ -1,0 +1,24 @@
+@import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-border-radius.scss";
+
+.btn {
+    box-shadow: $btn-shadow;
+    border-radius: $border-radius-100;
+    border: none;
+    outline: none;
+    padding: 10px 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+
+    &__white{
+        background-color: $white;
+        color: $secondary--800;
+        border: 1px solid $secondary--800;
+    }
+
+    &__secondary {
+        background-color: $secondary--800;
+        color: $white;
+    }
+}

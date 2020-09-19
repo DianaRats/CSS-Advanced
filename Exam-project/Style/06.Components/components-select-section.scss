@@ -1,0 +1,38 @@
+@import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-border-radius.scss";
+
+select {
+    width: 100%;
+    padding: 12px 60px 12px 14px;
+    margin: 8px auto;
+    border-radius: $border-radius-6;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: $grey--700;
+    appearance: none;
+    position: relative;
+
+    @include iphone8 {
+        white-space: pre-wrap;
+    }
+}
+
+.select-section::after {
+    content: "";
+    background: url("../../Repository/Icons/arrow_down.png") center no-repeat;
+    width: 12px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+}
+
+option {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: $grey--700;
+    background-color: $white;
+}
